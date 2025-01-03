@@ -12,10 +12,10 @@
       width: 750px;
       margin: 50px auto;
       padding: 15px;
-      /* position: relative; */
+      box-shadow: 0 0 4px 4px grey;
     }
 
-    .main-section{
+    .main-section {
       border-bottom: dashed 1px black;
     }
 
@@ -36,13 +36,11 @@
     }
 
     .brand-address {
-      /* position: absolute; */
-      /* right: 0; */
       margin-left: 600px;
       margin-top: 80px;
     }
 
-    .detail-section{
+    .detail-section {
       border-bottom: dashed 1px black;
     }
 
@@ -52,147 +50,168 @@
       margin: 30px 0;
     }
 
-
-    .receipt-detail{
-        display: flex;
-        justify-content: center;
-        margin: 10px 0;
-
+    .receipt-detail {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
     }
 
-    .receipt-value{
-        border-bottom: 1px dashed black;
-        width: 40%;
-        font-weight: bold;
+    .receipt-value {
+      border-bottom: 1px dashed black;
+      width: 40%;
+      font-weight: bold;
     }
 
-    .receipt-sub-heading{
+    .receipt-sub-heading {
       width: 30%;
     }
 
-    .sign{
+    .sign {
       text-align: end;
       margin-top: 70px;
       font-size: 13px;
     }
 
-    .sign-img{
+    .sign-img {
       height: 70px;
     }
 
-    .sign-name{
+    .sign-name {
       margin-top: -8px;
       margin-right: 6px;
       font-size: 15px;
     }
 
-    .greeting-mess{
+    .greeting-mess {
       background-color: #ff1a1a;
       color: white;
       text-align: center;
     }
 
-    .gretting{
+    .gretting {
       font-size: 20px;
       padding: 10px;
     }
 
-
+    /* Mobile */
+    @media (max-width:600px){
+      .receipt {
+      border: solid 1px black;
+      height: 950px;
+      width: 350px;
+      margin: 5px;
+      padding: 15px;
+    }
+  .logo {
+      height: 50px;
+      margin-top: 70px;
+      margin-left: 150px;
+    }
+    .brand-name {
+      font-size: 30px;
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+    .brand-address {
+      margin-left: 230px;
+      margin-top: 80px;
+    }
+    .receipt-sub-heading {
+      font-size: 19px;
+      width: 35%;
+    }
+    .receipt-value {
+      border-bottom: 1px dashed black;
+      width: 50%;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .receipt-heading {
+      text-align: center;
+      font-size: 18px;
+      margin: 30px 0;
+    }
+    .sign-name {
+      margin-top: -8px;
+      margin-right: 6px;
+      font-size: 18px;
+    }
+    .sign-img {
+      height: 90px;
+    }
+    .digital-mess{
+      font-size: 18px;
+    }
+    }
   </style>
 
   <body>
     <div class="receipt">
       <div class="main-section">
-      <div>
-        <img src="slack.png" class="logo" />
-        <p class="brand-name">Pagariya Mart</p>
-      </div>
+        <div>
+          <img src="slack.png" class="logo" />
+          <p class="brand-name">Pagariya Mart</p>
+        </div>
 
-      <div class="brand-address">
-        <p>
-          08, Pagariya Mart, <br />Dharampeth Chowk,<br />
-          Nagpure- 440012<br />
-          Call us:<a href="tele:8655616011" class="call-email"> 8655616011 </a>
-        </p>
+        <div class="brand-address">
+          <p>
+            08, Pagariya Mart, <br />Dharampeth Chowk,<br />
+            Nagpure- 440012<br />
+            Call us:<a href="tele:8655616011" class="call-email">
+              8655616011
+            </a>
+          </p>
+        </div>
       </div>
-    </div>
-     
 
       <div class="detail-section">
-      <div class="receipt-heading">
-        <h2>Payment Receipt</h2>
-      </div>
+        <div class="receipt-heading">
+          <h2>Payment Receipt</h2>
+        </div>
 
-      
-      <div class="receipt-detail">
-        <div class="receipt-sub-heading">
-            Name: 
+        <div class="receipt-detail">
+          <div class="receipt-sub-heading">Name:</div>
+          <div class="receipt-value">Riya Pratik Sharma</div>
         </div>
-        <div class="receipt-value">
-            Riya Pratik Sharma
-        </div>
-      </div>
 
-      <div class="receipt-detail">
-        <div class="receipt-sub-heading">
-            Mobile No.
-         </div>
-        <div class="receipt-value" >
-            3647829361
+        <div class="receipt-detail">
+          <div class="receipt-sub-heading">Mobile No.</div>
+          <div class="receipt-value">3647829361</div>
         </div>
-      </div>
 
-      <div class="receipt-detail">
-        <div class="receipt-sub-heading">
-            Receipt No.:
-         </div>
-        <div class="receipt-value">
-            3728103
+        <div class="receipt-detail">
+          <div class="receipt-sub-heading">Receipt No.:</div>
+          <div class="receipt-value">3728103</div>
         </div>
-      </div>
 
-      <div class="receipt-detail">
-        <div class="receipt-sub-heading">
-            Payment Date: 
+        <div class="receipt-detail">
+          <div class="receipt-sub-heading">Payment Date:</div>
+          <div class="receipt-value">24 December 2024</div>
         </div>
-        <div class="receipt-value">
-            24 December 2024
-        </div>
-      </div>
 
-      <div class="receipt-detail">
-        <div class="receipt-sub-heading">
-            Amount:
-         </div>
-        <div class="receipt-value">
-            10,000/-
+        <div class="receipt-detail">
+          <div class="receipt-sub-heading">Amount:</div>
+          <div class="receipt-value">10,000/-</div>
+        </div>
+
+        <div class="receipt-detail">
+          <div class="receipt-sub-heading">Payment Mode:</div>
+          <div class="receipt-value">UPI</div>
+        </div>
+
+        <div class="sign">
+          <img src="signature.png" class="sign-img" />
+          <p class="sign-name">Accountant Signature</p>
         </div>
       </div>
-
-      <div class="receipt-detail">
-        <div class="receipt-sub-heading">
-            Payment Mode:
-         </div>
-        <div class="receipt-value">
-            UPI
-        </div>
-      </div>
-
-      <div class="sign">
-        <img src="signature.png" class="sign-img">
-        <p class="sign-name">Accountant Signature</p>
-      </div>
-    </div>
 
       <div>
-        <p >This is a computer generated receipt....</p>
+        <p class="digital-mess">This is a computer generated receipt....</p>
       </div>
 
       <div class="greeting-mess">
         <p class="gretting">Thank you for your payment..</p>
       </div>
-   
-
     </div>
   </body>
 </html>
